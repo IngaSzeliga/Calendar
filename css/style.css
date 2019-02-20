@@ -1,0 +1,133 @@
+body{
+    background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+.calendar{
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 185px);
+    grid-template-rows: repeat(3,200px);
+}
+
+h1{
+    text-align: center;
+    font-family: Snell Roundhand, cursive;
+    font-size: 100px;
+    margin-bottom: 30px;
+    margin-top: -2px;
+    color: black;
+}
+
+.month-type-1{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 270%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month-type-2{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 230%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month-type-3{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 280%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month-type-4{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 340%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month-type-5{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 330%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month-type-6{
+    padding-bottom: 5em;
+    margin-top: -60px;
+    margin-left: 270%;
+    font-family: Snell Roundhand, cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.month {
+    display: grid;
+    border: 1px black ridge;
+    padding: 3%;
+    padding-top: 50px;
+    justify-content: center;
+    justify-self: center;
+    font-family: Snell Roundhand, cursive;
+    font-size: 10px;
+    grid-gap: 5px;
+    grid-template: repeat(5, 20px)/repeat(7, 20px);
+  }
+
+.grid-item {
+    border: 1px ridge #585858;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.big {
+    border: 1px ridge #585858;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.red{
+    border: 1px ridge #585858;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #872242;
+    color: black;
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+.red2{
+    background-color: #872242;
+    color: black;
+    font-weight: bold; 
+    font-size: 30px;  
+}
+
+@media screen and (max-width: 600px) {
+    .calendar{
+    grid-template-columns: repeat(2, 185px);
+    grid-template-rows: repeat(6,200px);  
+    }   
+}
